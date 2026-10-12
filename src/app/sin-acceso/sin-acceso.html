@@ -1,0 +1,16 @@
+<main class="access-page">
+  <section class="access-card">
+    <span class="access-icon" aria-hidden="true">!</span>
+    <p class="eyebrow">ACCESO RESTRINGIDO</p>
+    <h1>Sin acceso</h1>
+    <p>
+      {{ usuario?.nombre }}, tu cuenta tiene el rol
+      <strong>{{ usuario?.rol }}</strong> y no cuenta con permisos para ver esta
+      página.
+    </p>
+    <div class="access-actions">
+      <a routerLink="/login">Volver al inicio</a>
+      <button type="button" (click)="cerrarSesion()">Cerrar sesión</button>
+    </div>
+  </section>
+</main>

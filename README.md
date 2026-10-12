@@ -12,6 +12,32 @@ ng serve
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
+## Inicio de sesión y roles
+
+Abre `http://localhost:4200/` para acceder al formulario. El servidor crea JWT
+firmados con HS256 y los guarda en una cookie `HttpOnly` con una duración de una
+hora. La sesión se comprueba en el servidor antes de permitir el acceso a las
+rutas protegidas.
+
+| Cuenta | Correo | Contraseña | Acceso |
+| --- | --- | --- | --- |
+| Administradora | `admin@demo.com` | `Admin123!` | `home` |
+| Usuario | `usuario@demo.com` | `Usuario123!` | `sin-acceso` |
+
+La ruta `home` requiere sesión válida y rol `admin`. Si alguien sin sesión
+intenta abrirla, se le devuelve al login; con una sesión válida pero sin el rol
+requerido, se muestra `sin-acceso`. Al iniciar sesión correctamente, `home`
+saluda a la persona y presenta sus datos registrados.
+
+Las cuentas y contraseñas están predefinidas solo para esta demostración. Antes
+de desplegar en producción, reemplázalas por usuarios persistidos y contraseñas
+con hash; además configura `JWT_SECRET` con un secreto aleatorio y privado. Si
+no se configura, el servidor genera un secreto nuevo al arrancar y las sesiones
+anteriores dejan de ser válidas.
+
+En producción, sirve el sitio mediante HTTPS para que la cookie también use el
+atributo `Secure`.
+
 ## Code scaffolding
 
 Angular CLI includes powerful code scaffolding tools. To generate a new component, run:

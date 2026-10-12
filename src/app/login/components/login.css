@@ -1,0 +1,155 @@
+.login-page {
+  display: grid;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  place-items: center;
+  background: #edf1f4;
+}
+
+.login-card {
+  width: min(100%, 420px);
+  padding: 2.25rem;
+  border: 1px solid #d8dfe3;
+  border-top: 5px solid #285b78;
+  background: #fff;
+  box-shadow: 0 5px 18px #20374712;
+}
+
+.brand-mark {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1.4rem;
+  place-items: center;
+  border-radius: 50%;
+  background: #e7eff3;
+  color: #285b78;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.eyebrow,
+.demo-title {
+  color: #60717a;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.eyebrow {
+  margin: 0 0 0.4rem;
+  letter-spacing: 0.07em;
+}
+
+h1 {
+  margin: 0;
+  color: #243942;
+  font-size: 1.9rem;
+}
+
+.intro {
+  margin: 0.55rem 0 1.65rem;
+  color: #68777d;
+  font-size: 0.94rem;
+  line-height: 1.5;
+}
+
+form {
+  display: grid;
+  gap: 0.65rem;
+}
+
+label {
+  margin-top: 0.35rem;
+  color: #34474f;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem 0.8rem;
+  border: 1px solid #cbd4d8;
+  border-radius: 4px;
+  outline: none;
+  background: #fff;
+  color: #25383f;
+  font: inherit;
+}
+
+input:focus {
+  border-color: #34779b;
+  box-shadow: 0 0 0 2px #34779b24;
+}
+
+button {
+  display: flex;
+  min-height: 44px;
+  margin-top: 0.7rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 0;
+  border-radius: 4px;
+  background: #285b78;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+}
+
+button:hover:not(:disabled) {
+  background: #1f4a63;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.error-message {
+  margin: 0.35rem 0 0;
+  color: #a43832;
+  font-size: 0.86rem;
+}
+
+.demo-accounts {
+  margin-top: 1.5rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid #dce3e5;
+  background: #f5f7f7;
+  color: #5b696e;
+  font-size: 0.76rem;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.demo-accounts p {
+  margin: 0;
+}
+
+.demo-accounts .demo-title {
+  margin-bottom: 0.3rem;
+  color: #34474f;
+}
+
+.demo-accounts strong {
+  color: #34474f;
+}
+
+.secure-note {
+  margin: 1rem 0 0;
+  color: #78858a;
+  font-size: 0.76rem;
+  text-align: center;
+}
+
+.secure-note span {
+  margin-right: 0.3rem;
+  color: #54815c;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 1.75rem 1.4rem;
+  }
+}

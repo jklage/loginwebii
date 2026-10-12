@@ -1,0 +1,35 @@
+<main class="portal-page">
+  <header class="portal-header">
+    <a class="portal-brand" routerLink="/home">
+      <span class="brand-mark">L</span>
+      <span>Portal</span>
+    </a>
+    <button class="logout-button" type="button" (click)="cerrarSesion()">
+      Cerrar sesión
+    </button>
+  </header>
+
+  <section class="welcome-card">
+    <span class="welcome-icon" aria-hidden="true">✓</span>
+    <p class="eyebrow">SESIÓN AUTENTICADA</p>
+    <h1>¡Hola, {{ usuario?.nombre }}!</h1>
+    <p class="welcome-copy">
+      Has iniciado sesión correctamente. Estos son los datos de tu cuenta.
+    </p>
+
+    <dl class="user-details">
+      <div>
+        <dt>Nombre</dt>
+        <dd>{{ usuario?.nombre }}</dd>
+      </div>
+      <div>
+        <dt>Correo electrónico</dt>
+        <dd>{{ usuario?.correo }}</dd>
+      </div>
+      <div>
+        <dt>Rol</dt>
+        <dd><span class="role-badge">{{ usuario?.rol }}</span></dd>
+      </div>
+    </dl>
+  </section>
+</main>

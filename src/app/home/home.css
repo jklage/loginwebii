@@ -1,0 +1,139 @@
+.portal-page {
+  min-height: 100vh;
+  padding: 0 1.5rem 3rem;
+  background: #edf1f4;
+}
+
+.portal-header {
+  display: flex;
+  max-width: 1000px;
+  height: 72px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #d5dfe3;
+}
+
+.portal-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: #243942;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.brand-mark {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: 50%;
+  background: #285b78;
+  color: white;
+}
+
+.logout-button {
+  padding: 0.55rem 0.8rem;
+  border: 1px solid #bbc9ce;
+  border-radius: 4px;
+  background: #fff;
+  color: #40565f;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.84rem;
+}
+
+.logout-button:hover {
+  background: #f5f7f7;
+}
+
+.welcome-card {
+  width: min(100%, 650px);
+  margin: 7vh auto 0;
+  padding: clamp(1.6rem, 5vw, 2.6rem);
+  border: 1px solid #d8dfe3;
+  border-top: 4px solid #54815c;
+  background: #fff;
+  box-shadow: 0 5px 18px #2037470b;
+}
+
+.welcome-icon {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 1.2rem;
+  place-items: center;
+  border-radius: 50%;
+  background: #edf4ee;
+  color: #54815c;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #54815c;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+h1 {
+  margin: 0.55rem 0;
+  color: #243942;
+  font-size: clamp(1.7rem, 5vw, 2.2rem);
+}
+
+.welcome-copy {
+  margin: 0;
+  color: #68777d;
+  line-height: 1.55;
+}
+
+.user-details {
+  display: grid;
+  margin: 1.7rem 0 0;
+  border-top: 1px solid #e0e6e8;
+}
+
+.user-details div {
+  display: flex;
+  min-height: 54px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid #e0e6e8;
+}
+
+.user-details dt {
+  color: #68777d;
+  font-size: 0.86rem;
+}
+
+.user-details dd {
+  margin: 0;
+  color: #34474f;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+.role-badge {
+  display: inline-block;
+  padding: 0.25rem 0.55rem;
+  border: 1px solid #cbd8cd;
+  border-radius: 3px;
+  background: #f1f6f1;
+  color: #47644b;
+  font-size: 0.76rem;
+  text-transform: capitalize;
+}
+
+@media (max-width: 520px) {
+  .portal-page {
+    padding: 0 1rem 2rem;
+  }
+}

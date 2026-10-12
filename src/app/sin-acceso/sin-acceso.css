@@ -1,0 +1,90 @@
+.access-page {
+  display: grid;
+  min-height: 100vh;
+  padding: 1.5rem;
+  place-items: center;
+  background: #edf1f4;
+}
+
+.access-card {
+  width: min(100%, 480px);
+  padding: clamp(1.7rem, 5vw, 2.5rem);
+  border: 1px solid #d8dfe3;
+  border-top: 4px solid #b47735;
+  background: #fff;
+  box-shadow: 0 5px 18px #2037470b;
+}
+
+.access-icon {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 1.2rem;
+  place-items: center;
+  border-radius: 50%;
+  background: #f8f1e8;
+  color: #a66a2d;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #9a642e;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+h1 {
+  margin: 0.55rem 0;
+  color: #243942;
+  font-size: 2rem;
+}
+
+.access-card > p:not(.eyebrow) {
+  color: #68777d;
+  line-height: 1.6;
+}
+
+.access-card strong {
+  color: #34474f;
+}
+
+.access-actions {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.access-actions a,
+.access-actions button {
+  padding: 0.65rem 0.9rem;
+  border: 1px solid #285b78;
+  border-radius: 4px;
+  background: #285b78;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.access-actions a:hover,
+.access-actions button:hover {
+  background: #1f4a63;
+}
+
+.access-actions button {
+  border-color: #bbc9ce;
+  background: #fff;
+  color: #40565f;
+}
+
+.access-actions button:hover {
+  border-color: #9aabb1;
+  background: #f5f7f7;
+}
